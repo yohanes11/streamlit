@@ -5,7 +5,7 @@ import pandas as pd
 from sklearn.tree import DecisionTreeClassifier
 
 # Upload Model yang sudah dibuat
-model_path = 'model_decisiontree.joblib'
+model_path = 'streamlit.joblib'
 model = jb.load(model_path)
 
 st.title('Logistic Regression Model Prediction')
