@@ -8,14 +8,14 @@ from sklearn.tree import DecisionTreeClassifier
 model_path = 'model_decisiontree.joblib'
 model = joblib.load(model_path)
 
-st.title('Logistic Regression Model Prediction')
+st.title('Decision Tree Model Prediction')
 
 # Inputan
-gender = st.selectbox('Jenis Kelamin : ', options=['Male', 'Female'])
-age = st.number_input('Umur Pendaftar : ', min_value=18, max_value=100, value=30)
-marital_status = st.selectbox('Status Perkawinan : ', options=['Single', 'Married','Widower', 'Divorced','Facto Union','Legally Separated'])
-scholarship_holder = st.selectbox('Penerima Beasiswa : ', options=['Yes', 'No'])
-course = st.selectbox('Jurusan : ', options=['Biofuel Production Technologies', 'Animation and Multimedia Design','Social Service (evening attendance)',
+gender = st.selectbox('Gender : ', options=['Male', 'Female'])
+age = st.number_input('Age at enrollment : ', min_value=18, max_value=100, value=30)
+marital_status = st.selectbox('Marital status : ', options=['Single', 'Married','Widower', 'Divorced','Facto Union','Legally Separated'])
+scholarship_holder = st.selectbox('Scholarship holder : ', options=['Yes', 'No'])
+course = st.selectbox('Course : ', options=['Biofuel Production Technologies', 'Animation and Multimedia Design','Social Service (evening attendance)',
                                              'Agronomy ','Communication Design','Veterinary Nursing','Informatics Engineering','Equinculture',
                                              'Management','Social Service','Nursing','Tourism','Oral Hygiene',
                                              'Advertising and Marketing Management','Journalism and Communication',
